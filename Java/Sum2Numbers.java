@@ -1,5 +1,3 @@
-import util.ListNode;
-
 public class Sum2Numbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode headNode = new ListNode(0);
