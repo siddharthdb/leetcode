@@ -9,16 +9,20 @@ var search = function(nums, target) {
     } else {
         var mid = Math.floor(len / 2);
 
-        if (nums[mid] > target) {
-            for (var i = 0; i <= mid; i++) {
-                if (nums[i] === target)
-                    return i;
-            }
+        let start = 0,
+            end = len;
+
+        if (nums[mid] === target) {
+            return mid;
+        } else if (nums[mid] === target) {
+            end = mid;
         } else {
-            for (var i = mid; i < len; i++) {
-                if (nums[i] === target)
-                    return i;
-            }
+            start = mid
+        }
+
+        for (var i = start; i < end; i++) {
+            if (nums[i] === target)
+                return i;
         }
     }
 
