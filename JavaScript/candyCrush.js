@@ -80,4 +80,4 @@ var candycrush = (s) => {
 
 }
 
-console.log(candycrush("abccbba"));
+console.log(candycrush("abcbba"));

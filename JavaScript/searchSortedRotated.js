@@ -1,7 +1,7 @@
 /**
  * @param {number[]} nums
  * @param {number} target
- * @return {number}
+ * @return {number} index position in nums array 
  */
 var searchSortedRotated = (nums, target) => {
     let start = 0, end = nums.length - 1;

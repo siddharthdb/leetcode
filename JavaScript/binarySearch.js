@@ -14,7 +14,7 @@ var search = function(nums, target) {
 
         if (nums[mid] === target) {
             return mid;
-        } else if (nums[mid] === target) {
+        } else if (nums[mid] > target) {
             end = mid;
         } else {
             start = mid
@@ -30,4 +30,4 @@ var search = function(nums, target) {
 
 };
 
-console.log(search([-1, 0, 5], 5));
+console.log(search([-1, 0, 5], -1));
